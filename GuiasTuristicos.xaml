@@ -1,0 +1,162 @@
+﻿<Window x:Class="GUI_RutaOrnitologica.GuiasTuristicos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI_RutaOrnitologica"
+        mc:Ignorable="d"
+        Title="{DynamicResource  VinculoGuiaTuristico}"  Height="850" Width="1370"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowState="Maximized">
+    <Grid x:Name="Principal">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="400"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="190*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Background="#FFD4FFC8" TextBlock.FontSize="20" Margin="0,0,0.333,0.333" Grid.ColumnSpan="2">
+            <Grid x:Name="PanelSuperior">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="300*"/>
+                    <ColumnDefinition Width="300*"/>
+                    <ColumnDefinition Width="300*"/>
+                    <ColumnDefinition Width="100*"/>
+                    <ColumnDefinition Width="150*"/>
+                    <ColumnDefinition Width="250*"/>
+                    <ColumnDefinition Width="50"/>
+
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="BtnMenu" Grid.Column="8" Grid.Row="0" Margin="5,5,5.333,5.333" Background="White" BorderBrush="Black" Foreground="{x:Null}" Click="opciones">
+                    <Image x:Name="ImgMenu" Source="Imagenes/Menu.png"/>
+                </Button>
+                <Image x:Name="Usuario" Grid.Column="4" Grid.Row="0" Margin="5" Source="Imagenes/PaulaCarnet.png"/>
+                <Label x:Name="lbUltimaVez" Content="" Margin="0"  Grid.Column="5" Grid.Row="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Image x:Name="imgIdioma" Grid.Column="6" Margin="0,0,0,0" Source="Imagenes/BanderaEspañola.png" HorizontalAlignment="Left" VerticalAlignment="Center" Width="30" Height="30"/>
+
+                <ComboBox x:Name="Idioma" Grid.Column="6" Grid.Row="0" Margin="40,0,0,0" VerticalAlignment="Center" SelectionChanged="cb_elementoSeleccionado">
+                    <ComboBoxItem x:Name="cbItem1" Content="{DynamicResource cbItem1}" VerticalAlignment="center" Margin="5,0,0,0"/>
+                    <ComboBoxItem x:Name="cbItem2" Content="{DynamicResource cbItem2}" VerticalAlignment="center" Margin="5,0,0,0"/>
+                </ComboBox>
+                <Button x:Name="BtnHome" Content="Home" Grid.Column="1" Margin="0" Style="{StaticResource EstiloBoton}" IsEnabled="True" Click="IrAHome"/>
+                <Button x:Name="BtnGymkanasPromociones" Content="{DynamicResource BtnGymkanasPromociones}" Grid.Column="2" Margin="0" Style="{StaticResource EstiloBoton}" Click="IrAGymkanaPromocion" />
+                <Button x:Name="BtnGuiasTuiristicos" Content="{DynamicResource BtnGuiasTuiristicos}" Grid.Column="3" Margin="0" Style="{StaticResource EstiloBoton}"/>
+                <Button x:Name="btnSalirPrincipal" Margin="5" HorizontalAlignment="Right" Click="AbandonarAplicacion" Grid.Column="7"  Style="{StaticResource EstiloBoton}">
+                    <Image x:Name="salir1"  Source="Imagenes/salir.png" Grid.Column="0" />
+                </Button>
+            </Grid>
+        </Border>
+        <Grid x:Name="Opciones" Margin="0" Grid.RowSpan="3" Grid.Row="2" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="100*"/>
+            </Grid.ColumnDefinitions>
+            <Rectangle x:Name="RecuadroOpciones" Margin="0,0,0,-0.001" Grid.ColumnSpan="2" Grid.RowSpan="7" />
+            <Label x:Name="lbPerfil"  Visibility="Hidden" Content="{DynamicResource ResourceKey=lbPerfil}" Margin="0" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="36" VerticalContentAlignment="Center" Grid.Column="1"/>
+            <Image x:Name="user"  Visibility="Hidden" Source="Imagenes/Usuario.png" Margin="0,30,10.333,29.667" Grid.Column="0" HorizontalAlignment="Right"/>
+            <Label x:Name="lbInformacion"  Visibility="Hidden" Content="{DynamicResource lbInformacion}" Margin="0" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="36" Grid.Row="1" VerticalContentAlignment="Center" Grid.Column="1"/>
+            <Button x:Name="btnInformacion"  Visibility="Hidden"  Margin="0,30.333,10.333,30.333" Grid.Row="1" HorizontalAlignment="Right" RenderTransformOrigin="1.772,0.478" Style="{StaticResource EstiloBoton}" >
+                <Image x:Name="informacion"  Source="Imagenes/info.png" />
+            </Button>
+            <Label x:Name="lbAyuda"  Visibility="Hidden" Content="{DynamicResource lbAyuda}" Margin="0" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="36" VerticalContentAlignment="Center" Grid.Row="2" Grid.Column="1"/>
+            <Image x:Name="ayuda"  Visibility="Hidden" Margin="0,24.667,5.333,25" Source="Imagenes/ayuda.png" HorizontalAlignment="Right" Grid.Row="2"/>
+            <Label x:Name="lbIdioma"  Visibility="Hidden" Content="{DynamicResource lbIdioma}" Margin="0" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="36" Grid.Row="3" VerticalContentAlignment="Center" Grid.ColumnSpan="2" Grid.Column="1"/>
+            <Image x:Name="idioma"  Visibility="Hidden" Source="Imagenes/idm.png"  Margin="0,20,2.333,19.667" Grid.Row="3" HorizontalAlignment="Right"/>
+            <Label x:Name="lbSalida"  Visibility="Hidden" Content="{DynamicResource lbSalida}" Margin="0" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="36" Grid.Row="6" VerticalContentAlignment="Center" Grid.ColumnSpan="2" Grid.Column="1"/>
+            <Button x:Name="btnSalir"  Visibility="Hidden" Margin="0,29.667,5.333,29.999" Grid.Row="6" HorizontalAlignment="Right" Click="AbandonarAplicacion" Style="{StaticResource EstiloBoton}">
+                <Image x:Name="salir"  Source="/Imagenes/salir.png" Grid.Column="0" />
+            </Button>
+            <Label x:Name="lbAutor"  Visibility="Hidden" Content="{DynamicResource lbSobre}" Margin="0" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="36" Grid.Row="5" VerticalContentAlignment="Center" Grid.Column="1"/>
+            <Button x:Name="btnAutor" Visibility="Hidden" Margin="0,29.667,5.332,29.999" Grid.Row="5" HorizontalAlignment="Right" Click="AcercaDe" Style="{StaticResource EstiloBoton}">
+                <Image x:Name="salir2"  Source="Imagenes/manual.jpg" Grid.Column="0" />
+            </Button>
+        </Grid>
+
+        <Button x:Name="VinculoHome" Content="HOME" Margin="40,55,0,0" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}" Background="{x:Null}" Click="IrAHome" Grid.RowSpan="2"/>
+        <Label Content=">" Margin="77,4.667,0,0" Grid.Row="1" FontWeight="Bold" HorizontalAlignment="Left"/>
+        <Button x:Name="VinculoGuiaTuristico" Content="{DynamicResource VinculoGuiaTuristico}" Margin="90,55,0,0" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}" Background="{x:Null}" Grid.RowSpan="2"/>
+
+        <GroupBox x:Name="DatosGuiasTuristicos" Header="{DynamicResource BtnGuiasTuiristicos}"  Margin="0" Grid.Row="2" >
+            <Grid x:Name="EspecificacionesGuias" Margin="10" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="465*"/>
+                    <ColumnDefinition Width="465*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="75*"/>
+                    <RowDefinition Height="600*"/>
+
+                </Grid.RowDefinitions>
+
+                <ScrollViewer Grid.Column="0" Margin="0" Grid.Row="1">
+                    <StackPanel  x:Name="spPanelDinamicoGuiasTuristicos"/>
+                </ScrollViewer>
+                <DockPanel Grid.Column="1" Grid.Row="1" Margin="10" Grid.RowSpan="1">
+                    <DockPanel.Background>
+                        <ImageBrush ImageSource="Imagenes/FondoGuia.jpg"/>
+                    </DockPanel.Background>
+
+                    <Label x:Name="lblInformacionCompleta" DockPanel.Dock="Top" Margin="10" FontSize="20" FontWeight="Bold" Foreground="Black" Background="Transparent">
+                        <Label Content="{DynamicResource LblInformacion}"/>
+                    </Label>
+                    <Grid x:Name="InformacionPrincipal" Margin="40">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition Height="5*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="25*"/>
+                            <ColumnDefinition Width="60*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle x:Name="MostrarDatos" Fill="White" Opacity="0.7" Margin="0,0,0.333,-0.333" Grid.ColumnSpan="2" Grid.RowSpan="6"  />
+                    <Label x:Name="lblNombre" Margin="0" FontSize="10" Content="{DynamicResource lblNombre}" Grid.Row="0" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                        <Label x:Name="lblApellido" Margin="0" FontSize="10" Content="{DynamicResource lblApellido}" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Grid.Row="1"/>
+                        <Label x:Name="lblTelefono" Margin="0" FontSize="10" Content="{DynamicResource lblTelefono}" Grid.Row="2" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                        <Label x:Name="lblCorreoElectronico" Margin="0" FontSize="10" Grid.Row="3" Content="{DynamicResource lblCorreoElectronico}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                        <Label x:Name="lblIdioma" Margin="0" FontSize="10" Grid.Row="4" Content="{DynamicResource lblIdiomas}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                        <Label x:Name="lblNombreGuia" Margin="0" FontSize="10"  Grid.Row="0" VerticalContentAlignment="Center" Grid.Column="1"/>
+                        <Label x:Name="lblApellidoGuia" Margin="0" FontSize="10"  VerticalContentAlignment="Center" Grid.Row="1" Grid.Column="1"/>
+                        <Label x:Name="lblTelefonoGuia" Margin="0" FontSize="10"  Grid.Row="2" VerticalContentAlignment="Center" Grid.Column="1"/>
+                        <Label x:Name="lblCorreoElectronicoGuia" Margin="0" FontSize="10" Grid.Row="3" VerticalContentAlignment="Center" Grid.Column="1"/>
+                        <Image x:Name="ImgIdiomaGuia" Margin="0" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left"/>
+
+                    </Grid>
+                </DockPanel>
+
+                <ToolBar x:Name="tbBarraHerramientas" Grid.Row="0" Grid.ColumnSpan="2" Background="White" Margin="0" Grid.RowSpan="1">
+                    <Button x:Name="btnAniadir" ToolTip="Añadir película" Click="btnAniadir_Click" Style="{StaticResource EstiloBoton}">
+                        <Image Source="Imagenes/Añadir.png" />
+                    </Button>
+                    <Separator/>
+                    <Button x:Name="btnEliminar" ToolTip="Eliminar película" Click="btnEliminar_Click" Style="{StaticResource EstiloBoton}">
+                        <Image Source="Imagenes/Eliminar.png" />
+                    </Button>
+                </ToolBar>
+
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

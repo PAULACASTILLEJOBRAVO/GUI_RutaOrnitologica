@@ -1,0 +1,8 @@
+﻿<GuiaTuristico>
+	<GuiaTuristico Perfil="Imagenes/Hector.png" Nombre="Héctor" Apellidos="Pino" Telefono="123456789" CorreoElectronico="HectorPino@gmail.com"
+            Idiomas="Imagenes/BanderaEspañola.png" />
+	<GuiaTuristico Perfil="Imagenes/Nicole.png" Nombre="Nicole" Apellidos="Durand" Telefono="987654321" CorreoElectronico="NicoleDurand@gmail.com"
+            Idiomas="Imagenes/BanderaEspañola.png" />
+	<GuiaTuristico Perfil="Imagenes/Spencer.png" Nombre="Spencer" Apellidos="Wright" Telefono="456123789" CorreoElectronico="SpencerWright@gmail.com"
+            Idiomas="Imagenes/BanderaInglesa.png" />
+</GuiaTuristico>

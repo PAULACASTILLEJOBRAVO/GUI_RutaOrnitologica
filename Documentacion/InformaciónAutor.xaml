@@ -1,0 +1,26 @@
+﻿<Window x:Class="GUI_RutaOrnitologica.Documentacion.InformaciónAutor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI_RutaOrnitologica.Documentacion"
+        mc:Ignorable="d"
+        Title="InformaciónAutor" Height="250" Width="370"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFD4FFC8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="15*"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer Margin="5" >
+            <TextBox x:Name="txtContenido" IsReadOnly="True" TextWrapping="Wrap" FontSize="14" Height="166" Width="344"/>
+        </ScrollViewer>
+        <Button x:Name="btnVolver" Grid.Row="1" Content="Volver" Style="{StaticResource EstiloBoton}" FontWeight="Bold" Click="btnVolver_Click" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Grid>
+</Window>

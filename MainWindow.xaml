@@ -1,0 +1,58 @@
+﻿<Window x:Class="GUI_RutaOrnitologica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI_RutaOrnitologica"
+        mc:Ignorable="d"
+        Title="{DynamicResource WindowTitle}" Height="850" Width="1370"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowState="Maximized">
+    <Window.Background>
+        <ImageBrush ImageSource="Imagenes/vencejos.png"/>
+    </Window.Background>
+    <Grid x:Name="Español" Background="Transparent"
+                Margin="0,0,3.333,10.667">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="125*"/>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="40*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="66*"/>
+            <ColumnDefinition Width="119*"/>
+            <ColumnDefinition Width="119*"/>
+            <ColumnDefinition Width="66*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle x:Name="FondoLogin" Fill="SlateGray" Margin="10" RadiusY="10" RadiusX="10"  Grid.ColumnSpan="4" Grid.Column="1" Grid.Row="1" Grid.RowSpan="6"/>
+        <TextBox x:Name="tbxNombreUsuario" TextWrapping="Wrap"
+                    VerticalContentAlignment="Center" TabIndex="1" Grid.Row="3" Margin="20" RenderTransformOrigin="0.5,0.606" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <Label x:Name="lbUsuario" Foreground="Black"  Content="{DynamicResource lbUsuario}" VerticalContentAlignment="Bottom" Margin="20,0,0,0" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="2"/>
+        <Label x:Name="lbInicio" Content="{DynamicResource lbInicio}"  Foreground="Black" Margin="0" Grid.Column="2" Grid.ColumnSpan="2" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+        <PasswordBox x:Name="pbxContraseña" PasswordChar="*" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" Margin="20" RenderTransformOrigin="0.5,0.606" IsEnabled="True" />
+        <Label x:Name="lbContrasenia" Content="{DynamicResource lbContrasenia}"  Foreground="Black" Margin="20,0,0,0" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="4" VerticalContentAlignment="Bottom"/>
+        <Button x:Name="btnlogin" Content="{DynamicResource btnlogin}" Margin="0" Grid.Row="6" Background="#FFDDDDDD" Click="comprobarInformacion" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="135"/>
+        <Image x:Name="imgIdioma" Grid.Column="6" Margin="0,0,5,0" Source="Imagenes/BanderaEspañola.png" HorizontalAlignment="Right" VerticalAlignment="Center" Width="30" Height="30"/>
+
+        <ComboBox x:Name="Idioma" Grid.Column="7" Grid.Row="0" Margin="0" VerticalAlignment="Center" SelectionChanged="cb_elementoSeleccionado">
+            <ComboBoxItem x:Name="cbItem1" Content="{DynamicResource cbItem1}" VerticalAlignment="center" Margin="5,0,0,0"/>
+            <ComboBoxItem x:Name="cbItem2" Content="{DynamicResource cbItem2}" VerticalAlignment="center" Margin="5,0,0,0"/>
+        </ComboBox>
+        <Button x:Name="btnSalirPrincipal" Margin="20" HorizontalAlignment="Center" Click="AbandonarAplicacion" Grid.Column="8" Style="{StaticResource EstiloBoton}" VerticalAlignment="Center">
+            <Image x:Name="salir1"  Source="Imagenes/salir.png" Grid.Column="0" />
+        </Button>
+        <Grid HorizontalAlignment="Left" Height="810" Margin="0" VerticalAlignment="Top" Width="1360" Grid.ColumnSpan="9" Grid.RowSpan="8"/>
+    </Grid>
+</Window>

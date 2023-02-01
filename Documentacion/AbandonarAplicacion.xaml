@@ -1,0 +1,25 @@
+﻿<Window x:Class="GUI_RutaOrnitologica.Documentacion.AbandonarAplicacion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI_RutaOrnitologica.Documentacion"
+        mc:Ignorable="d"
+        Title="AbandonarAplicacion" Height="400" Width="500"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Canvas>
+        <Image  Source="/GUI_RutaOrnitologica;component/Imagenes/visorBinoculares.png" Width="500" Height="400" Stretch="Fill"/>
+        <TextBlock Canvas.Left="100" Canvas.Top="120" TextWrapping="Wrap" Text="{DynamicResource lblCierre}" FontSize="25" FontWeight="Bold" Foreground="#FFD4FFC8" Width="300" TextAlignment="Center"/>
+        <Button x:Name="btnSalir" FontSize="30" Content="{DynamicResource btnCierre}" Canvas.Left="264" Canvas.Top="228" Style="{StaticResource EstiloBoton}" Click="btnSalir_Click" Cursor="Hand" Margin="0" Width="124" Height="45"/>
+        <Button x:Name="btnCancelar" FontSize="30" Content="{DynamicResource btnCancelar}" Canvas.Left="114" Canvas.Top="228" Style="{StaticResource EstiloBoton}"  Click="btnCancelar_Click" Margin="0" Width="125" Height="45"/>
+        <Image x:Name="imgIdioma" Source="/GUI_RutaOrnitologica;component/Imagenes/BanderaEspañola.png"  Width="26" Height="22" Canvas.Left="306" Canvas.Top="80"/>
+
+        <ComboBox x:Name="Idioma" SelectionChanged="cb_elementoSeleccionado" Canvas.Left="333" Canvas.Top="80">
+            <ComboBoxItem x:Name="cbItem1" Content="{DynamicResource cbItem1}" VerticalAlignment="center" Margin="5,0,0,0"/>
+            <ComboBoxItem x:Name="cbItem2" Content="{DynamicResource cbItem2}" VerticalAlignment="center" Margin="5,0,0,0"/>
+        </ComboBox>
+    </Canvas>
+</Window>

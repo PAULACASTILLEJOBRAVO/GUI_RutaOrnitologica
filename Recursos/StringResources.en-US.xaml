@@ -1,0 +1,121 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="cbItem1">SP</sys:String>
+    <sys:String x:Key="cbItem2">EN</sys:String>
+    <sys:String x:Key="BtnGymkanasPromociones">Gymkhanas/Promotions</sys:String>
+    <sys:String x:Key="BtnGuiasTuiristicos">Tour Guides</sys:String>
+    <sys:String x:Key="lbPerfil">Profile</sys:String>
+    <sys:String x:Key="lbInformacion">Information</sys:String>
+    <sys:String x:Key="lbAyuda">Help</sys:String>
+    <sys:String x:Key="lbIdioma">Language</sys:String>
+    <sys:String x:Key="lbSalida">Exit</sys:String>
+    <sys:String x:Key="DatosEspecificosRuta">Specific data</sys:String>
+    <sys:String x:Key="LblInformacion">Information:</sys:String>
+    <sys:String x:Key="lblNombre">Name:</sys:String>
+    <sys:String x:Key="LblFinalRuta">End:</sys:String>
+    <sys:String x:Key="LblTiempoEstimadoRuta">Estimated time (min):</sys:String>
+    <sys:String x:Key="LblRecomendacionesRuta">Recommendations:</sys:String>
+    
+    
+    <sys:String x:Key="WindowTitle">Login</sys:String>
+    <sys:String x:Key="btnlogin">Log in</sys:String>
+    <sys:String x:Key="lbContrasenia">Password:</sys:String>
+    <sys:String x:Key="lbInicio">Log in</sys:String>
+    <sys:String x:Key="lbUsuario">User:</sys:String>
+
+    <sys:String x:Key="lbRutas">Routes:</sys:String>
+    <sys:String x:Key="lbPromociones">Promotions:</sys:String>
+    <sys:String x:Key="lbGymkanas">Gymkhanas:</sys:String>
+    <sys:String x:Key="lbRutaRojaAmarilla">Red and yellow</sys:String>
+    <sys:String x:Key="lbRutaAvesTajo">Birds along the Tagus</sys:String>
+    <sys:String x:Key="lbRutaLaGuardia">The Lair</sys:String>
+    <sys:String x:Key="lbRutaBarcaPasaje">Passage Boat</sys:String>
+    <sys:String x:Key="lblGymkanaNiños">Photogymkhana</sys:String>
+    <sys:String x:Key="lbBusquedaTesoro">Treasure hunt</sys:String>
+    <sys:String x:Key="infoRuta">Click on the images to see the contents of the route, the plus symbol (+) to create a route and the bin to delete a route.</sys:String>
+    <sys:String x:Key="infoPromocion">Click on the images to send a promotion to registered customers, the plus symbol (+) to create a promotion and the bin to delete a promotion.</sys:String>
+    <sys:String x:Key="infoGymkana">Click on the images to send a gymkhana to registered customers, the plus symbol (+) to create a promotion and the bin to delete a promotion.</sys:String>
+    <sys:String x:Key="lbSobre">About</sys:String>
+    
+    <sys:String x:Key="lblSentido">Direction:</sys:String>
+    <sys:String x:Key="lblInicio">Start:</sys:String>
+    <sys:String x:Key="lblFecha">Date of completion:</sys:String>
+    <sys:String x:Key="LblTiempoMovimiento">Moving time(min):</sys:String>
+    <sys:String x:Key="LblDificultad">Difficulty:</sys:String>
+    <sys:String x:Key="LblEpoca">Season:</sys:String>
+    <sys:String x:Key="ExDatosExtras">Extra data</sys:String>
+    <sys:String x:Key="lbContratada">Hired</sys:String>
+    <sys:String x:Key="GbHistorial">History</sys:String>
+    <sys:String x:Key="BtnPuntosAvistamiento">Sighting Points</sys:String>
+    <sys:String x:Key="GbIncidencias">Incidents</sys:String>
+    <sys:String x:Key="SinCovertura">Without coverage</sys:String>
+    <sys:String x:Key="Desorientacion">Disorientation</sys:String>
+    <sys:String x:Key="AsistenciaMedica">Health care</sys:String>
+    <sys:String x:Key="GbComentarios">Comments</sys:String>
+    <sys:String x:Key="PrimerComentario">Fantastic field day</sys:String>
+    <sys:String x:Key="SegundoComentario">A highly recommended visit!</sys:String>
+
+    <sys:String x:Key="AñadirRuta">ADD ROUTE</sys:String>
+    <sys:String x:Key="DatosGeneralesRuta">General data</sys:String>
+    <sys:String x:Key="LblNombreRuta">Name*:</sys:String>
+    <sys:String x:Key="LblSentidoRuta">Direction*:</sys:String>
+    <sys:String x:Key="LblInicioRuta">Start*:</sys:String>
+    <sys:String x:Key="LblFechaRealizacionRuta">Date of completion*:</sys:String>
+    <sys:String x:Key="LblTiempoMovimientoRuta">Moving time (min)*:</sys:String>
+    <sys:String x:Key="TxbNombreRuta">Write down route name.</sys:String>
+    <sys:String x:Key="TxbInicioRuta">Write down starting point.</sys:String>
+    <sys:String x:Key="TxbFinalRuta">Write down end point.</sys:String>
+    <sys:String x:Key="TxbFechaRealizacion">Choose a date.</sys:String>
+    <sys:String x:Key="TxbTiempoEstimado">Write down total time.</sys:String>
+    <sys:String x:Key="TxbTiempoMovimiento">Write down time in motion.</sys:String>
+    <sys:String x:Key="CbtSeleccioneSentido">Choose de destination.</sys:String>
+    <sys:String x:Key="LblDificultadRuta">Difficulty*:</sys:String>
+    <sys:String x:Key="LblEpocaRuta">Season*:</sys:String>
+    <sys:String x:Key="TxbInformacion">Write down the relevant information about the route.</sys:String>
+    <sys:String x:Key="TxbRecomendaciones">Write down recommendations for the route.</sys:String>
+    <sys:String x:Key="CbtSeleccionarDificultad">Choose difficulty</sys:String>
+    <sys:String x:Key="CbtFacil">Easy</sys:String>
+    <sys:String x:Key="CbtMedio">Middle</sys:String>
+    <sys:String x:Key="CbtDificil">Hard</sys:String>
+    <sys:String x:Key="CbtSeleccionarEpoca">Choose season</sys:String>
+    <sys:String x:Key="CbtTodoAnio">Throughout year</sys:String>
+    <sys:String x:Key="CbtPrimavera">Spring</sys:String>
+    <sys:String x:Key="CbtVerano">Summer</sys:String>
+    <sys:String x:Key="CbtOtoño">Fall</sys:String>
+    <sys:String x:Key="CbtInvierno">Winter</sys:String>
+    <sys:String x:Key="CbtLluvioso">Rainy</sys:String>
+
+    <sys:String x:Key="VinculoPuntosAvistamiento">SIGHTING POINTS</sys:String>
+    <sys:String x:Key="GbLugares">Locations</sys:String>
+    <sys:String x:Key="LblPuntosAvistamiento">Sighting points:</sys:String>
+    <sys:String x:Key="LblAvesZona">Local birds:</sys:String>
+    <sys:String x:Key="LblZona">Zone:</sys:String>
+    <sys:String x:Key="CkbMirador">Valley Viewpoint</sys:String>
+    <sys:String x:Key="CkbPaseo">Recadero Walk</sys:String>
+    <sys:String x:Key="CkbSenda">Tagus Trail</sys:String>
+
+    <sys:String x:Key="VinculoGuiaTuristico">TOUR GUIDES</sys:String>
+    <sys:String x:Key="lblApellido">Surname:</sys:String>
+    <sys:String x:Key="lblTelefono">Phone:</sys:String>
+    <sys:String x:Key="lblCorreoElectronico">Email:</sys:String>
+    <sys:String x:Key="lblIdiomas">Spoken languages:</sys:String>
+
+    <sys:String x:Key="VinculoGymkanaPromocion">GYMKHANA/PROMOTIONS</sys:String>
+    <sys:String x:Key="GbEnvios">Shipping information</sys:String>
+    <sys:String x:Key="lblPara">To*:</sys:String>
+    <sys:String x:Key="lblDesde">From*:</sys:String>
+    <sys:String x:Key="lblAsunto">Subject:</sys:String>
+    <sys:String x:Key="lblMensaje">Messager*:</sys:String>
+    <sys:String x:Key="lbAdjunto">File attached:</sys:String>
+
+    <sys:String x:Key="lblNombreGuia">Name of tourist guide</sys:String>
+
+    <sys:String x:Key="lblCierre">Thanks for using our application...</sys:String>
+    <sys:String x:Key="btnCierre">Close</sys:String>
+    <sys:String x:Key="btnCancelar">Cancel</sys:String>
+    <sys:String x:Key="btnAceptar">Acept</sys:String>
+    <sys:String x:Key="txtContenidoGuardar">Are you sure you want to save the content?</sys:String>
+    <sys:String x:Key="txtContenidoEliminar">Are you sure you want to delete the content?</sys:String>
+    <sys:String x:Key="txtContenidoEnviar">Message shared successfully.</sys:String>
+</ResourceDictionary>

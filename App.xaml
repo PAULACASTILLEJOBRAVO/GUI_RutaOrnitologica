@@ -1,0 +1,16 @@
+﻿<Application x:Class="GUI_RutaOrnitologica.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:GUI_RutaOrnitologica"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Recursos/StringResources.en-US.xaml" />
+                <ResourceDictionary Source="Recursos/StringResources.es-ES.xaml" />
+
+                <ResourceDictionary x:Name="RecursosEstilos" Source="REcursos/Estilos.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
